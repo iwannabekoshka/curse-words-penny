@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  font-family: inherit;
+
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 4em;
+
+  font-family: monospace;
+}
+
+h1,
+h2 {
+  margin-bottom: 1em;
+}
+
+button {
+  border: 0;
+  outline: 0;
+
+  display: inline-block;
+
+  padding: 0.5em 1em;
+
+  background-color: hsl(199, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:active {
+    translate: 0 2px;
+  }
+
+  &:is(:hover, :focus) {
+    box-shadow: 2px 2px 4px hsla(0, 0%, 50%, 50%);
+  }
+}
